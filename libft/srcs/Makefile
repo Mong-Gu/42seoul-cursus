@@ -6,7 +6,7 @@
 #    By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/19 17:55:06 by hyun              #+#    #+#              #
-#    Updated: 2020/10/19 17:58:02 by hyun             ###   ########.fr        #
+#    Updated: 2020/10/19 19:27:08 by hyun             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,12 +19,13 @@ RM = rm -f
 
 FILES = ft_strlen \
 		ft_strdup \
- 		ft_toupper \
- 		ft_tolower \
- 		ft_isalnum \
- 		ft_isalpha \
- 		ft_isascii \
- 		ft_isdigit
+		ft_toupper \
+		ft_tolower \
+		ft_isalnum \
+		ft_isalpha \
+		ft_isascii \
+		ft_isdigit \
+		ft_isprint
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
