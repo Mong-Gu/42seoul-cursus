@@ -17,7 +17,14 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -f
 
-FILES = ft_strlen
+FILES = ft_strlen \
+		ft_strdup \
+ 		ft_toupper \
+ 		ft_tolower \
+ 		ft_isalnum \
+ 		ft_isalpha \
+ 		ft_isascii \
+ 		ft_isdigit
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
