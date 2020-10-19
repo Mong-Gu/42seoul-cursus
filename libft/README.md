@@ -8,8 +8,8 @@
 | strchr  | -                 |           |          |          |
 | strrchr | -                 |           |          |          |
 | strnstr | -                 |           |          |          |
-| strncmp | -                 |           |          |          |
-| atoi    | -                 |           |          |          |
+| strncmp | -                 | 10/11     | 20.10.20 |          |
+| atoi    | -                 | 14/19     | 20.10.20 |          |
 | isalpha | -                 | success   | 20.10.19 | 20.10.19 |
 | isdigit | -                 | success   | 20.10.19 | 20.10.19 |
 | isalnum | -                 | success   | 20.10.19 | 20.10.19 |
