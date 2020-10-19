@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 17:33:59 by hyun              #+#    #+#             */
-/*   Updated: 2020/10/19 19:26:34 by hyun             ###   ########.fr       */
+/*   Updated: 2020/10/20 00:35:54 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
+int		ft_strncmp(char *s1, char *s2, size_t len);
+int		ft_atoi(const char *str);
 
 #endif
