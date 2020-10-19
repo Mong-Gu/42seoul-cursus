@@ -7,17 +7,16 @@
 | strlcat | -                 |           |          |          |
 | strchr  | -                 |           |          |          |
 | strrchr | -                 |           |          |          |
-| strlen  | -                 |           |          |          |
 | strnstr | -                 |           |          |          |
 | strncmp | -                 |           |          |          |
 | atoi    | -                 |           |          |          |
-| isalpha | -                 |           |          |          |
-| isdigit | -                 |           |          |          |
-| isalnum | -                 |           |          |          |
-| isascii | -                 |           |          |          |
-| isprint | -                 |           |          |          |
-| toupper | -                 |           |          |          |
-| tolower | -                 |           |          |          |
+| isalpha | -                 | success   | 20.10.19 | 20.10.19 |
+| isdigit | -                 | success   | 20.10.19 | 20.10.19 |
+| isalnum | -                 | success   | 20.10.19 | 20.10.19 |
+| isascii | -                 | success   | 20.10.19 | 20.10.19 |
+| isprint | -                 | success   | 20.10.19 | 20.10.19 |
+| toupper | -                 | success   | 20.10.19 | 20.10.19 |
+| tolower | -                 | success   | 20.10.19 | 20.10.19 |
 | memset  | -                 |           |          |          |
 | bzero   | -                 |           |          |          |
 | memcpy  | -                 |           |          |          |
@@ -26,7 +25,7 @@
 | memchr  | -                 |           |          |          |
 | memcmp  | -                 |           |          |          |
 | calloc  | malloc            |           |          |          |
-| strdup  | malloc            |           |          |          |
+| strdup  | malloc            | success   | 20.10.19 | 20.10.19 |
 
 <br>
 
@@ -60,4 +59,3 @@
 | lstclear     | free              |           |       |     |
 | lstiter      | -                 |           |       |     |
 | lstmap       | malloc, free      |           |       |     |
-|              | -                 |           |       |     |
