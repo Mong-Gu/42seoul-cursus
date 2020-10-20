@@ -8,8 +8,8 @@
 | strchr  | -                 |           |          |          |
 | strrchr | -                 |           |          |          |
 | strnstr | -                 |           |          |          |
-| strncmp | -                 |           |          |          |
-| atoi    | -                 |           |          |          |
+| strncmp | -                 | success   | 20.10.20 | 20.10.20 |
+| atoi    | -                 | 14/19     | 20.10.20 |          |
 | isalpha | -                 | success   | 20.10.19 | 20.10.19 |
 | isdigit | -                 | success   | 20.10.19 | 20.10.19 |
 | isalnum | -                 | success   | 20.10.19 | 20.10.19 |
@@ -17,9 +17,9 @@
 | isprint | -                 | success   | 20.10.19 | 20.10.19 |
 | toupper | -                 | success   | 20.10.19 | 20.10.19 |
 | tolower | -                 | success   | 20.10.19 | 20.10.19 |
-| memset  | -                 |           |          |          |
-| bzero   | -                 |           |          |          |
-| memcpy  | -                 |           |          |          |
+| memset  | -                 | success   | 20.10.20 | 20.10.20 |
+| bzero   | -                 | success   | 20.10.20 | 20.10.20 |
+| memcpy  | -                 |           | 20.10.20 |          |
 | memccpy | -                 |           |          |          |
 | memmove | -                 |           |          |          |
 | memchr  | -                 |           |          |          |
@@ -59,3 +59,6 @@
 | lstclear     | free              |           |       |     |
 | lstiter      | -                 |           |       |     |
 | lstmap       | malloc, free      |           |       |     |
+
+-   test 파일 출처
+    https://github.com/ska42/libft-war-machine
