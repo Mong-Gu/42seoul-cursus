@@ -8,11 +8,7 @@
 | strchr  | -                 |           |          |          |
 | strrchr | -                 |           |          |          |
 | strnstr | -                 |           |          |          |
-<<<<<<< HEAD
 | strncmp | -                 | success   | 20.10.20 | 20.10.20 |
-=======
-| strncmp | -                 | 10/11     | 20.10.20 |          |
->>>>>>> da9b4df5ed43a9ddc5d723903d122831b0f3e7e9
 | atoi    | -                 | 14/19     | 20.10.20 |          |
 | isalpha | -                 | success   | 20.10.19 | 20.10.19 |
 | isdigit | -                 | success   | 20.10.19 | 20.10.19 |
