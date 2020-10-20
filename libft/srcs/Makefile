@@ -6,7 +6,7 @@
 #    By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/19 17:55:06 by hyun              #+#    #+#              #
-#    Updated: 2020/10/19 19:27:08 by hyun             ###   ########.fr        #
+#    Updated: 2020/10/20 00:36:10 by hyun             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,9 @@ FILES = ft_strlen \
 		ft_isalpha \
 		ft_isascii \
 		ft_isdigit \
-		ft_isprint
+		ft_isprint \
+		ft_strncmp \
+		ft_atoi
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
