@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 17:33:59 by hyun              #+#    #+#             */
-/*   Updated: 2020/10/21 15:52:01 by hyun             ###   ########.fr       */
+/*   Updated: 2020/10/21 15:58:24 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ void	ft_bzero(void *b, size_t len);
 void	*ft_memset(void *dest, int c, size_t len);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t number, size_t size);
+void	*ft_memcpy(void *dst, const void *src, size_t len);
 
 #endif
