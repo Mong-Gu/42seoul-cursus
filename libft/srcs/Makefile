@@ -6,7 +6,7 @@
 #    By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/19 17:55:06 by hyun              #+#    #+#              #
-#    Updated: 2020/10/21 18:18:31 by hyun             ###   ########.fr        #
+#    Updated: 2020/10/21 18:56:32 by hyun             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,10 @@ FILES = ft_strlen \
 		ft_memmove \
 		ft_memcmp \
 		ft_memchr \
-		ft_memccpy
+		ft_memccpy \
+		ft_strchr \
+		ft_strrchr \
+		ft_strnstr
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))

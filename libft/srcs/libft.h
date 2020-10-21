@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 17:33:59 by hyun              #+#    #+#             */
-/*   Updated: 2020/10/21 18:25:20 by hyun             ###   ########.fr       */
+/*   Updated: 2020/10/21 18:56:27 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 
 #endif
