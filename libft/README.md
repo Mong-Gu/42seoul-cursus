@@ -1,31 +1,31 @@
 -   Part 1 - Libc Functions
 
-| Name    | External Function | Unit Test | Start    | End      | Comment                                                                                                                 |
-| ------- | ----------------- | --------- | -------- | -------- | ----------------------------------------------------------------------------------------------------------------------- |
-| strlen  | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
-| strlcpy | -                 |           |          |          | -                                                                                                                       |
-| strlcat | -                 |           |          |          | -                                                                                                                       |
-| strchr  | -                 |           |          |          | -                                                                                                                       |
-| strrchr | -                 |           |          |          | -                                                                                                                       |
-| strnstr | -                 |           |          |          | -                                                                                                                       |
-| strncmp | -                 | success   | 20.10.20 | 20.10.20 | -                                                                                                                       |
-| atoi    | -                 | 14/19     | 20.10.20 |          | -                                                                                                                       |
-| isalpha | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
-| isdigit | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
-| isalnum | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
-| isascii | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
-| isprint | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
-| toupper | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
-| tolower | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
-| memset  | -                 | success   | 20.10.20 | 20.10.20 | -                                                                                                                       |
-| bzero   | -                 | success   | 20.10.20 | 20.10.20 | -                                                                                                                       |
-| memcpy  | -                 | success   | 20.10.20 | 20.10.21 | war-machine 테스트 파일 기준, dst와 src가 겹칠 때의 예외 처리는 해주지 않았는데 일단 통과                               |
-| memccpy | -                 |           |          |          | -                                                                                                                       |
-| memmove | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                                       |
-| memchr  | -                 | success   | 20.10.21 | 20.10.21 | war-machine 테스트 파일 기준, 우분투에서는 6번 테스트케이스가 실패하는데 과카몰리에서는 통과. 현 소스코드 유지하겠음. - |
-| memcmp  | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                                       |
-| calloc  | malloc            | success   | 20.10.21 | 20.10.21 | -                                                                                                                       |
-| strdup  | malloc            | success   | 20.10.19 | 20.10.19 | -                                                                                                                       |
+| Name    | External Function | Unit Test | Start    | End      | Comment                                                                                                         |
+| ------- | ----------------- | --------- | -------- | -------- | --------------------------------------------------------------------------------------------------------------- |
+| strlen  | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
+| strlcpy | -                 |           |          |          | -                                                                                                               |
+| strlcat | -                 |           |          |          | -                                                                                                               |
+| strchr  | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                               |
+| strrchr | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                               |
+| strnstr | -                 | 3/9       | 20.10.21 |          | -                                                                                                               |
+| strncmp | -                 | success   | 20.10.20 | 20.10.20 | -                                                                                                               |
+| atoi    | -                 | 14/19     | 20.10.20 |          | -                                                                                                               |
+| isalpha | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
+| isdigit | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
+| isalnum | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
+| isascii | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
+| isprint | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
+| toupper | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
+| tolower | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
+| memset  | -                 | success   | 20.10.20 | 20.10.20 | -                                                                                                               |
+| bzero   | -                 | success   | 20.10.20 | 20.10.20 | -                                                                                                               |
+| memcpy  | -                 | success   | 20.10.20 | 20.10.21 | war-machine 테스트 파일 기준, dst와 src가 겹칠 때의 예외 처리는 해주지 않았는데 일단 통과                       |
+| memccpy | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                               |
+| memmove | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                               |
+| memchr  | -                 | success   | 20.10.21 | 20.10.21 | war-machine 테스트 파일 기준, 우분투에서는 6번 테스트케이스가 실패하는데 과카몰리에서는 통과. 현 소스코드 유지! |
+| memcmp  | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                               |
+| calloc  | malloc            | success   | 20.10.21 | 20.10.21 | -                                                                                                               |
+| strdup  | malloc            | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
 
 <br>
 
