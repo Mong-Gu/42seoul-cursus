@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/21 18:28:23 by hyun              #+#    #+#             */
-/*   Updated: 2020/10/21 18:48:00 by hyun             ###   ########.fr       */
+/*   Updated: 2020/10/22 15:58:24 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strchr(const char *s, int c)
 
 	len = ft_strlen(s);
 	i = 0;
-	while(i < len)
+	while (i < len)
 	{
 		if (s[i] == c)
 			return ((char *)s + i);
