@@ -7,7 +7,7 @@
 | strlcat | -                 |           |          |          | -                                                                                                               |
 | strchr  | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                               |
 | strrchr | -                 | success   | 20.10.21 | 20.10.21 | -                                                                                                               |
-| strnstr | -                 | 3/9       | 20.10.21 |          | -                                                                                                               |
+| strnstr | -                 | success   | 20.10.21 | 20.10.22 | -                                                                                                               |
 | strncmp | -                 | success   | 20.10.20 | 20.10.20 | -                                                                                                               |
 | atoi    | -                 | 14/19     | 20.10.20 |          | -                                                                                                               |
 | isalpha | -                 | success   | 20.10.19 | 20.10.19 | -                                                                                                               |
@@ -31,18 +31,18 @@
 
 -   Part 2 - Additional Functions
 
-| Name       | External Function | Unit Test | Start | End | Comment |
-| ---------- | ----------------- | --------- | ----- | --- | ------- |
-| substr     | malloc            |           |       |     | -       |
-| strjoin    | malloc            |           |       |     | -       |
-| strtrim    | malloc            |           |       |     | -       |
-| split      | malloc, free      |           |       |     | -       |
-| itoa       | malloc            |           |       |     | -       |
-| strmapi    | malloc            |           |       |     | -       |
-| putchar_fd | write             |           |       |     | -       |
-| putstr_fd  | write             |           |       |     | -       |
-| putendl_fd | write             |           |       |     | -       |
-| putnbr_fd  | write             |           |       |     | -       |
+| Name       | External Function | Unit Test | Start    | End      | Comment |
+| ---------- | ----------------- | --------- | -------- | -------- | ------- |
+| substr     | malloc            |           |          |          | -       |
+| strjoin    | malloc            |           |          |          | -       |
+| strtrim    | malloc            |           |          |          | -       |
+| split      | malloc, free      |           |          |          | -       |
+| itoa       | malloc            |           |          |          | -       |
+| strmapi    | malloc            |           |          |          | -       |
+| putchar_fd | write             | success   | 20.10.22 | 20.10.22 | -       |
+| putstr_fd  | write             | success   | 20.10.22 | 20.10.22 | -       |
+| putendl_fd | write             | success   | 20.10.22 | 20.10.22 | -       |
+| putnbr_fd  | write             |           | 20.10.22 |          | -       |
 
 <br>
 
