@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/22 16:09:12 by hyun              #+#    #+#             */
-/*   Updated: 2020/10/22 16:14:32 by hyun             ###   ########.fr       */
+/*   Updated: 2020/10/22 16:28:29 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (fd < 1)
+	if (!s || fd < 1)
 		return ;
-	while (*s)
-		ft_putchar_fd(*s++, fd);
+	write(fd, s, ft_strlen(s));
 }
