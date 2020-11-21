@@ -6,7 +6,7 @@
 #    By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/19 17:55:06 by hyun              #+#    #+#              #
-#    Updated: 2020/10/22 19:27:58 by hyun             ###   ########.fr        #
+#    Updated: 2020/11/21 18:26:32 by hyun             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ FILES = ft_strlen \
 		ft_isascii \
 		ft_isdigit \
 		ft_isprint \
+		ft_abs \
 		ft_strncmp \
 		ft_atoi \
 		ft_bzero \
@@ -42,6 +43,7 @@ FILES = ft_strlen \
 		ft_strchr \
 		ft_strrchr \
 		ft_strnstr \
+		ft_strrev \
 		ft_putchar_fd \
 		ft_putstr_fd \
 		ft_putendl_fd \
