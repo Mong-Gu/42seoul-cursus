@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/21 18:29:06 by hyun              #+#    #+#             */
-/*   Updated: 2020/12/06 00:06:51 by hyun             ###   ########.fr       */
+/*   Updated: 2020/12/06 00:19:25 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,10 @@
 
 char	*ft_strnstr(const char *src, const char *target, size_t n)
 {
-	size_t	src_len;
 	size_t	target_len;
-	size_t	range;
-	size_t	i;
 
 	if (!target)
-		return ((char *)src);
-	src_len = ft_strlen(src);
+		return (char *)(src);
 	target_len = ft_strlen(target);
 	while (*src && n-- >= target_len)
 	{
@@ -30,5 +26,5 @@ char	*ft_strnstr(const char *src, const char *target, size_t n)
 			return (char *)(src);
 		src++;
 	}
-	return (NULL);
+	return (0);
 }
