@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/21 17:04:17 by hyun              #+#    #+#             */
-/*   Updated: 2020/10/22 15:32:33 by hyun             ###   ########.fr       */
+/*   Updated: 2020/12/06 00:11:49 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (mem1[i] != mem2[i] || (mem1[i] == 0 || mem2[i] == 0))
+		if (mem1[i] != mem2[i])
 			return (mem1[i] - mem2[i]);
 		i++;
 	}
