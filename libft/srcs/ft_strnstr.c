@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/21 18:29:06 by hyun              #+#    #+#             */
-/*   Updated: 2020/12/06 00:19:25 by hyun             ###   ########.fr       */
+/*   Updated: 2020/12/06 00:21:44 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strnstr(const char *src, const char *target, size_t n)
 {
 	size_t	target_len;
 
-	if (!target)
+	if (*target == '\0')
 		return (char *)(src);
 	target_len = ft_strlen(target);
 	while (*src && n-- >= target_len)
