@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/20 15:51:58 by hyun              #+#    #+#             */
-/*   Updated: 2020/10/21 16:07:38 by hyun             ###   ########.fr       */
+/*   Updated: 2020/12/06 00:15:14 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t len)
 	unsigned char	*tmp_dst;
 	size_t			n;
 
+	if (!(dst || src))
+		return (dst);
 	tmp_src = (unsigned char *)src;
 	tmp_dst = (unsigned char *)dst;
 	n = 0;
