@@ -6,7 +6,7 @@
 #    By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/19 17:55:06 by hyun              #+#    #+#              #
-#    Updated: 2020/12/05 19:19:54 by hyun             ###   ########.fr        #
+#    Updated: 2020/12/05 19:36:07 by hyun             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,9 @@ FILES = ft_strlen \
 		ft_lstsize \
 		ft_lstadd_front \
 		ft_lstadd_back \
-		ft_lstlast
+		ft_lstlast \
+		ft_lstdelone \
+		ft_lstclear
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
