@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 13:46:39 by hyun              #+#    #+#             */
-/*   Updated: 2020/12/05 18:35:52 by hyun             ###   ########.fr       */
+/*   Updated: 2020/12/05 18:51:37 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ char		**ft_split(char const *s, char c)
 		{
 			row_size = cnt_size(s, c);
 			if (!(res[i] = (char *)malloc(sizeof(char) * (row_size + 1))))
-				return (free_array(res, i - 1));
+				return (ft_free_array(res, i - 1));
 			ft_strlcpy(res[i++], s, row_size + 1);
 			s += row_size;
 		}
