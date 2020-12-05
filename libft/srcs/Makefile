@@ -6,7 +6,7 @@
 #    By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/19 17:55:06 by hyun              #+#    #+#              #
-#    Updated: 2020/12/05 19:41:27 by hyun             ###   ########.fr        #
+#    Updated: 2020/12/05 20:07:04 by hyun             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,22 +54,25 @@ FILES = ft_strlen \
 		ft_free_array \
 		ft_split \
 		ft_strtrim \
-		ft_strmapi \
-		ft_lstnew \
-		ft_lstsize \
-		ft_lstadd_front \
-		ft_lstadd_back \
-		ft_lstlast \
-		ft_lstdelone \
-		ft_lstclear \
-		ft_lstiter \
-		ft_lstmap
+		ft_strmapi
+
+BONUS_FILES = ft_lstnew \
+				ft_lstsize \
+				ft_lstadd_front \
+				ft_lstadd_back \
+				ft_lstdelone \
+				ft_lstclear \
+				ft_lstlast \
+				ft_lstiter \
+				ft_lstmap
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
+BONUS_SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(BONUS_FILES)))
 
 OBJS_DIR = ./
 OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
+BONUS_OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(BONUS_FILES)))
 
 .c.o: $(SRCS)
 	$(CC) $(CFLAGS) -c -o $@ $<
@@ -77,12 +80,17 @@ OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
 $(NAME): $(OBJS)
 	$(AR) $@ $^
 
+bonus: $(BONUS_OBJS)
+	$(AR) $(NAME) $^
+
 all: $(NAME)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: clean all
+
+.PHONY: bonus all clean fclean re
