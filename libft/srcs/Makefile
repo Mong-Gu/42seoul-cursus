@@ -6,7 +6,7 @@
 #    By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/19 17:55:06 by hyun              #+#    #+#              #
-#    Updated: 2020/12/05 18:36:37 by hyun             ###   ########.fr        #
+#    Updated: 2020/12/05 18:49:40 by hyun             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,8 @@ FILES = ft_strlen \
 		ft_substr \
 		ft_strjoin \
 		ft_free_array \
-		ft_split
+		ft_split \
+		ft_strtrim
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
