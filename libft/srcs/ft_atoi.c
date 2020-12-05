@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/20 00:34:30 by hyun              #+#    #+#             */
-/*   Updated: 2020/12/05 23:54:03 by hyun             ###   ########.fr       */
+/*   Updated: 2020/12/05 23:58:40 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ int	ft_atoi(const char *str)
 		sign = str[i++] == '-' ? -1 : 1;
 	while (str[i] >= '0' && str[i] <= '9')
 		value = value * 10 + str[i++] - '0';
-	if (sign == 1 && value > INT_MAX)
+	if (sign == 1 && value > 2147483647)
 		return (-1);
-	if (sign == -1 && value > INT_MIN_ABS)
+	if (sign == -1 && value > 2147483648)
 		return (0);
 	return (sign * value);
 }

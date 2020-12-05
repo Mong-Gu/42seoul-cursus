@@ -6,7 +6,7 @@
 /*   By: hyun <hyun@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 17:33:59 by hyun              #+#    #+#             */
-/*   Updated: 2020/12/05 23:53:00 by hyun             ###   ########.fr       */
+/*   Updated: 2020/12/05 23:58:23 by hyun             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-
-#define TRUE 1
-#define INT_MAX 2147483647
-#define INT_MIN_ABS 2147483648
 
 typedef struct		s_list
 {
